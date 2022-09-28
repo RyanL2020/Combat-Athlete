@@ -4,7 +4,7 @@ import Fighter from "./Fighter";
 
 const FighterList = ({fighters}) => (
     <div className="fighter-list">
-        { fighters.map(fighter => <Fighter name={fighter.name} image={fighter.image_url}/>) }
+        { fighters.map(fighter => <Fighter name={fighter.name} image={fighter.style}/>) }
     </div>
 
 

@@ -1,8 +1,8 @@
-import Fighter from "./Fighter";
 
+import FighterContainer from "./FighterContainer";
 
 function App() {
-  return <Fighter />
+  return  <FighterContainer />
     
 }
 
