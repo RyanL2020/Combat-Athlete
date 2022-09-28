@@ -1,8 +1,27 @@
+import React, {useState, useEffect} from 'react';
+import FighterList from './FighterList';
 
-import FighterContainer from "./FighterContainer";
 
 function App() {
-  return  <FighterContainer />
+  const [ fighters, setFighters] = useState([])
+    
+
+
+useEffect(()=> {
+  fetch('http://localhost:3000/fighters')
+  .then((response) => response.json())
+  .then((data) => setFighters(data));
+}, [] )
+  console.log(fighters)
+  
+    return (
+      <div>    
+    <FighterList fighters={fighters}  />
+      <h1>fighters</h1>
+     </div>
+    
+
+  )
     
 }
 

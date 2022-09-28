@@ -1,26 +1,23 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+
 import FighterList from './FighterList';
 
 
-class FighterContainer extends React.Component {
-    constructor() {
-    super()
-
-    this.state = {
-    fighters: []
-    };
-}
-
-componentDidMount() {
-    fetch('http://localhost:3000/fighters')
-  .then((response) => response.json())
-  .then((data) => console.log(data));
-  }
-  
-  render() {
-    return <FighterList fighters={this.state.fighters}  />
+function FighterContainer() {
+ const [ fighters, setFighters] = useState([])
     
-  }
+
+
+useEffect(()=> {
+  fetch('http://localhost:3000/fighters')
+  .then((response) => response.json())
+  .then((data) => setFighters(data));
+}, [] )
+  console.log(fighters)
+  
+    return <FighterList fighters={fighters}  />
+    
+  
   
 }
 
