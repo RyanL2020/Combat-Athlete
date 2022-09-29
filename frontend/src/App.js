@@ -1,5 +1,10 @@
 import React, {useState, useEffect} from 'react';
+import './App.css'
 import FighterList from './FighterList';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 
 function App() {
@@ -15,11 +20,13 @@ useEffect(()=> {
   console.log(fighters)
   
     return (
-      <div>    
-      <h1>fighters</h1>
-    <FighterList fighters={fighters}  />
-     </div>
-    
+      <Container >  
+        <Row>   
+         
+        <h1>fighters</h1>
+       <Col> <FighterList fighters={fighters}  /> </Col> 
+      </Row>
+      </Container>
 
   )
     
