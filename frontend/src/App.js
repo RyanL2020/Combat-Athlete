@@ -16,8 +16,8 @@ useEffect(()=> {
   
     return (
       <div>    
-    <FighterList fighters={fighters}  />
       <h1>fighters</h1>
+    <FighterList fighters={fighters}  />
      </div>
     
 

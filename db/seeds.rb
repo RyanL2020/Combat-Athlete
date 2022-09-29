@@ -8,6 +8,18 @@
 Fighter.destroy_all
 
 
-Fighter.create(name: 'Luke', style: 'boxer' )
+5.times do Fighter.create(
+    name: Faker::Name.name, 
+    image: Faker::Avatar.image,
+    style: "Martial Arts",
+    age: Faker::Number.number, 
+    height: Faker::Number.number,
+    weight: Faker::Number.decimal,
+    reach: Faker::Number.decimal,
+    win: Faker::Number.number,
+    loss: Faker::Number.number,
+    gender: "N/A"
+    )
+end 
 
 puts "You GOt seeds"

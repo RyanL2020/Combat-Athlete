@@ -4,7 +4,7 @@ import Fighter from "./Fighter";
 
 const FighterList = ({fighters}) => {
     const listOfFighters = fighters.map(fighter => {
-        return <Fighter key={fighter.id} name={fighter.name}/>
+        return <Fighter key={fighter.id} name={fighter.name} style={fighter.style}/>
     })
 
     return (
