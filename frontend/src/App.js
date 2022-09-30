@@ -4,6 +4,7 @@ import FighterList from './FighterList';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import NavigationBar from './NavigationBar';
 
 
 
@@ -23,6 +24,7 @@ useEffect(()=> {
       <Container >  
         <Row>   
          
+        <NavigationBar />
         <h1>fighters</h1>
        <Col> <FighterList fighters={fighters}  /> </Col> 
       </Row>
