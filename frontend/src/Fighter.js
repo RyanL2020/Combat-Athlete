@@ -15,7 +15,7 @@ const Fighter = ({image, name, style, age, height, weight, reach, win, loss, gen
         <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Dropdown>
-        <Dropdown.Toggle variant="success" id="dropdown-basic">
+        <Dropdown.Toggle variant="primary" id="dropdown-basic">
          Fighter Info
         </Dropdown.Toggle>
         <Dropdown.Menu>
