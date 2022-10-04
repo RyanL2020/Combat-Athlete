@@ -17,8 +17,8 @@ function NavigationBar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
+            <Nav.Link href="./Home">Home</Nav.Link>
+            <Nav.Link href="./Fighter">Link</Nav.Link>
             
            
           </Nav>
@@ -29,7 +29,7 @@ function NavigationBar() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="outline-primary">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
