@@ -44,16 +44,3 @@ const Fighter = ({image, name, style, age, height, weight, reach, win, loss, gen
 
 export default Fighter;
 
-{/* <Card.Text>
-<h3>{image}</h3>
-
-<h3>Style: {style}</h3>
-<h3>Age: {age}</h3>
-<h3>Height: {height}</h3>
-<h3>Weight: {weight}</h3>
-<h3>Reach: {reach}</h3>
-<h3>Win: {win}</h3>
-<h3>Loss: {loss}</h3>
-<h3>Gender: {gender}</h3>
-
-</Card.Text> */}
