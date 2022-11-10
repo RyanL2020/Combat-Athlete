@@ -44,6 +44,6 @@ function Home() {
   );
 }
 
-export default UncontrolledExample;
+export default Home;
 
 

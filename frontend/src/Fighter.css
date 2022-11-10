@@ -1,9 +1,0 @@
-.container {
-   align-content: flex-start;
-}
-
-/* was style={{ width: 18rem, height: auto }} on line 14  */
-.card {
-    width: 18rem;
-    height: auto; 
-}
